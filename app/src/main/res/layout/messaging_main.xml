@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAA00">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/moveLL"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFAA00"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/moveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="MOVE"/>
+
+            <Button
+                android:id="@+id/unmoveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="UNMOVE"/>
+
+            <TextView
+                android:id="@+id/unmoveasdasdButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="4 4 Princesses in 5 runs. 2 from bonus stage, 2 from last stage. Fixed Damage + Impact Croc on the bonus stages really helped.4 Princesses in 5 runs. 2 from bonus stage, 2 from last stage. Fixed Damage + Impact Croc on the bonus stages really helped.4 Princesses in 5 runs. 2 from bonus stage, 2 from last stage. Fixed Damage + Impact Croc on the bonus stages really helped.4 Princesses in 5 runs. 2 from bonus stage, 2 from last stage. Fixed Damage + Impact Croc on the bonus stages really helped.Princesses in 5 runs. 2 from bonus stage, 2 from last stage. Fixed Damage + Impact Croc on the bonus stages really helped."/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moveTV"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/moveLL"
+            android:background="#AAFF00"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

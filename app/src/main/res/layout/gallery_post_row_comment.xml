@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commentMargin"
+    android:orientation="vertical"
+    android:background="#262626"
+    android:padding="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/commentVoteIndicator"
+        android:orientation="horizontal"
+        android:background="#262626"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/OPTextView"
+            android:textSize="12sp"
+            android:textColor="#85BF25"
+            android:text="OP"
+            android:paddingRight="5dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:text="Hello World"
+            android:textSize="12sp"
+            android:textColor="#58ACFA"
+            android:background="#262626"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/pointsTextView"
+            android:textSize="12sp"
+            android:textColor="#58ACFA"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:textSize="12sp"
+            android:textColor="#F2F2F2"
+            android:maxLines="1"
+            android:paddingRight="4dp"
+            android:gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:textColor="#F2F2F2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultPadding" />
+
+    <TextView
+        android:id="@+id/repliesTextView"
+        android:textSize="12sp"
+        android:textColor="#ffc966"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/topLevelLayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.altoncng.commentingforimgur.GalleryFragment">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultPadding"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imgurImageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/DefaultPadding"/>
+
+    <LinearLayout
+        android:id="@+id/imageFiller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#181817">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DefaultPadding" />
+
+</LinearLayout>

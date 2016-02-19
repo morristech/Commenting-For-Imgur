@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#181817"
+    android:layout_marginBottom="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#262626"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:textColor="#F2F2F2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultPadding"/>
+
+        <FrameLayout
+            android:id="@+id/video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:foreground="@drawable/playbuttonoverlay256p">
+
+            <VideoView
+                android:id="@+id/imgurVideoView"
+                android:layout_gravity="center_vertical"
+                android:layout_height="250dp"
+                android:layout_width="match_parent"
+                style="@style/DefaultPadding"/>
+
+            <ImageView
+                android:id="@+id/imgurThumbnailVideoView"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                style="@style/DefaultPadding"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:textColor="#F2F2F2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            style="@style/DefaultPadding" />
+
+    </LinearLayout>
+</LinearLayout>

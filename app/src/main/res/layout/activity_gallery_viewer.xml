@@ -1,0 +1,24 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/galleryPageScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#181817"
+    tools:context="com.altoncng.commentingforimgur.GalleryViewerActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#181817"
+        android:orientation="vertical" >
+
+        <com.altoncng.commentingforimgur.dynamicviewpager.CustomPager
+            android:id="@+id/viewpager"
+            android:background="#181817"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+</ScrollView>

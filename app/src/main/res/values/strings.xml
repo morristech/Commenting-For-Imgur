@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Commenting for imgur</string>
+
+    <string name="upload_page">Upload to imgur</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="choose">Choose Image</string>
+    <string name="upload">Upload</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="notification_fail">Image failed to upload...</string>
+    <string name="notification_share_link">Share link</string>
+    <string name="notifaction_success">Successfully uploaded</string>
+    <string name="notification_progress">Uploading image...</string>
+    <string name="title_activity_album">AlbumActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_gallery_viewer">Gallery Browse</string>
+    <string name="gallery">Gallery</string>
+
+</resources>

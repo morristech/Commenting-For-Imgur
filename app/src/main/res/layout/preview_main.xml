@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Comment Preview"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#181817"
+        android:textColor="#F2F2F2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#181817">
+
+        <LinearLayout
+            android:id="@+id/preview_body"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/preview_buttons"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#181817"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#F2F2F2"
+            android:layout_margin="5dp"
+            android:background="#306FDB" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#F2F2F2"
+            android:layout_margin="5dp"
+            android:background="#306FDB" />
+
+    </LinearLayout>
+</LinearLayout>

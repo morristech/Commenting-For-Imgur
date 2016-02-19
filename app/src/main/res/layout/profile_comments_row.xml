@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#262626"
+    android:padding="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/commentPostImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:padding="3dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#262626"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/commentVoteIndicator"
+            android:orientation="horizontal"
+            android:background="#262626"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:textSize="12sp"
+                android:textColor="#58ACFA"
+                android:maxLines="1"
+                android:maxEms="15"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pointsTextView"
+                android:textSize="12sp"
+                android:textColor="#F2F2F2"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:textSize="12sp"
+                android:textColor="#F2F2F2"
+                android:paddingRight="4dp"
+                android:gravity="right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:textColor="#F2F2F2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/DefaultPadding" />
+
+    </LinearLayout>
+</LinearLayout>
