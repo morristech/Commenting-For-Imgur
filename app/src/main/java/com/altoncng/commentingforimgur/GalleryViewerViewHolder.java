@@ -68,6 +68,7 @@ public class GalleryViewerViewHolder  extends RecyclerView.ViewHolder implements
     public GalleryViewerViewHolder(View itemView, int viewType, RecyclerClickInterface listener) {
         this(itemView, viewType);
         itemView.setOnClickListener(this);
+        mListener = listener;   //accidentally erased this line
     }
 
     private void doEverything(View itemView, int viewType){
